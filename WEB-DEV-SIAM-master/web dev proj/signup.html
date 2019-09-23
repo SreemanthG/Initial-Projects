@@ -1,0 +1,210 @@
+<html>
+
+    <head>    <title>SIAM signin</title>
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <style>
+    .form{
+        height: 500pxpx;
+        width: 500px;
+        margin: 50px auto;
+    }
+    </style>
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="C:\Users\Sreemanth\OneDrive\Desktop\web dev proj\1.html">Signin</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+        <!---<div class="form">
+                <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                          <input type="etext" class="form-control" id="colFormLabel" placeholder="Enter yout Name">
+                        </div>
+                </div>
+                <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Username</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="colFormLabel" placeholder="Enter yout Username">
+                        </div>
+                </div>
+                <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="colFormLabel" placeholder="Enter yout Email">
+                        </div>
+                </div>
+                <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="colFormLabel" placeholder="Type Password">
+                        </div>
+                </div>
+                <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Verify Password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="colFormLabel" placeholder="Re-Type Password">
+                        </div>
+                </div>
+                <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Mobile Number</label>
+                        <div class="col-sm-10">
+                          <input type="number" class="form-control" id="colFormLabel" placeholder="enter mobile number">
+                        </div>
+                </div>
+                <div class="dropdown" style="margin: -100px">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>-->
+        </div>
+        <div class="container">
+            <div class="Back">
+                 <i class="fa fa-arrow-left" onclick="Back()"></i>
+             </div>
+             <p class="h2 text-center">Form</p>
+             <form action="" method="post">
+                 <div class="preview text-center">
+                     <img class="preview-img" src="http://simpleicon.com/wp-content/uploads/account.png" alt="Preview Image" width="200" height="200"/>
+                     <div class="browse-button">
+                         <i class="fa fa-pencil-alt"></i>
+                         <input class="browse-input" type="file" required name="UploadedFile" id="UploadedFile"/>
+                     </div>
+                     <span class="Error"></span>
+                 </div>
+                 <div class="form-group">
+                     <label>Full Name:</label>
+                     <input class="form-control" type="text" name="fullname" required placeholder="Enter Your Full Name"/>
+                     <span class="Error"></span>
+                 </div>
+                 <div class="form-group">
+                    <label>Username:</label>
+                    <input class="form-control" type="text" name="username" required placeholder="Enter Your Username"/>
+                    <span class="Error"></span>
+                </div>
+                 <div class="form-group">
+                     <label>Email:</label>
+                     <input class="form-control" type="email" name="email" required placeholder="Enter Your Email"/>
+                     <span class="Error"></span>
+                 </div>
+                 <div class="form-group">
+                     <label>Password:</label>
+                     <input class="form-control" type="password" name="password" required placeholder="Enter Password"/>
+                     <span class="Error"></span>
+                 </div>
+                 <div class="form-group">
+                    <label>Mobile Number:</label>
+                    <input class="form-control" type="text" name="mobilenumber" required placeholder="Enter Your Mobile Number"/>
+                    <span class="Error"></span>
+                </div>
+                 <div class="form-group">
+                     <label>Gender:</label><br/>
+                     <label><input type="radio" name="gender" required value="Male" checked /> Male</label>
+                     <label><input type="radio" name="gender" required value="Female" /> Female</label>
+                     <label><input type="radio" name="gender" required value="Other" /> Other</label>
+                     <span class="Error"></span>
+                 </div>
+                 
+                 <div class="form-group">
+                    <label>Role:</label><br/>
+                    <label><input type="radio" name="gender" required value="Core Member" checked /> Core memeber</label>
+                    <label><input type="radio" name="gender" required value="Committee member" /> Committe member</label>
+                    <label>
+ 
+                            <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     
+                             department
+                     
+                              <span class="caret"></span>
+                     
+                            </button>
+                     
+                            <ul class="dropdown-menu" aria-labelledby="btndropdown">
+                              <li>
+
+                                  <label class="radio-btn">
+                     
+                                      <input type="checkbox" value='Design'>
+                     
+                                      Design
+                     
+                                  </label>
+                     
+                              </li>
+                     
+                              <li>
+                     
+                                  <label class="radio-btn">
+                     
+                                      <input type="checkbox" value='management'>
+                     
+                                      management
+                     
+                                  </label>
+                     
+                              </li>
+                     
+                              <li>
+                     
+                                  <label class="radio-btn">
+                     
+                                      <input type="checkbox" value='Technical'>
+                     
+                                      Technical
+                     
+                                  </label>
+                     
+                              </li>
+                    </label>
+                    <span class="Error"></span>
+                    
+                </div>
+                 <div class="form-group">
+                     <input class="btn btn-primary btn-block" type="submit" value="Submit"/>
+                 </div>
+             </form>
+         </div>
+
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
